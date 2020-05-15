@@ -1,0 +1,310 @@
+/*
+cиний #2196F3
+белый #ffffff
+черный #000000
+темно-серый #212121
+светло-серый #757575
+
+вторичный цвет фона секций #F5F4FA
+цвет фона футера #2F303A
+*/
+
+:root {
+  --primery-text-color: #757575;
+  --accent-color: #2196f3;
+  --light-color: #ffffff;
+  --dark-color: #212121;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  color: var(--primery-text-color);
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+}
+
+.list {
+  /* убирем точки в списках, где это необходимо */
+  list-style: none;
+}
+
+.button {
+  font-family: inherit;
+  color: var(--light-color);
+  background-color: var(--accent-color);
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+/* header */
+
+.header .logo-accent {
+  color: #000000;
+}
+
+/* nav-header */
+
+.header-nav .nav-link {
+  color: #212121;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-nav li {
+  display: inline;
+}
+
+.nav-link.current {
+  color: var(--accent-color);
+}
+
+.header-nav .nav-link:hover,
+.header-nav .nav-link:focus {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* contact header */
+.header-mail,
+.header-phone {
+  color: var(--primery-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-mail:hover,
+.header-mail:focus,
+.header-phone:hover,
+.header-phone:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* hero */
+.hero {
+  background-color: #757575;
+}
+.hero-title {
+  color: var(--light-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* advantages - преимущества */
+.advantages-title {
+  /* скрытый заголовк */
+}
+
+.advantages-item h3 {
+  font-size: 14px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+}
+
+.advantages-item p {
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+}
+
+/* services */
+.services {
+  background-color: #757575;
+}
+
+.services-title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.services-item h3 {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  color: var(--light-color);
+  text-transform: uppercase;
+}
+
+.services-item a {
+  text-decoration: none;
+}
+
+/* team */
+.team-title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.team-item h3 {
+  /* name */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+}
+
+.team-item p {
+  /* position */
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+}
+
+.team-social-list a {
+  color: #afb1b8;
+  text-decoration: none;
+}
+
+.team-social-list a:hover,
+.team-social-list a:focus {
+  color: var(--light-color);
+  background-color: var(--accent-color);
+}
+
+.team-social-list li {
+  display: inline;
+}
+
+.clients h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  background-color: #2f303a;
+}
+
+.footer .logo-accent {
+  color: #ffffff;
+}
+
+.footer address {
+  /* весь блок адреса */
+  font-style: normal;
+}
+
+.footer-address {
+  /* город, улица, дом */
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+}
+
+.footer-mail,
+.footer-phone {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footer-social b,
+.subscribe b {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.copy {
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-social-list li {
+  display: inline;
+}
+
+.footer-social-list a {
+  color: var(--light-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+.footer-social-list a:hover,
+.footer-social-list a:focus {
+  color: var(--accent-color);
+  background-color: var(--light-color);
+  text-decoration: none;
+}
+
+/* portfolio */
+
+/* filter */
+
+.filter-item button {
+  font-family: inherit;
+  color: var(--dark-color);
+  background-color: #f5f4fa;
+}
+
+.filter-item button:hover,
+.filter-item button:focus {
+  color: var(--light-color);
+  background-color: var(--accent-color);
+}
+
+.filter > li {
+  display: inline;
+}
+.example > li {
+  background: #ffffff;
+}
+.portfolio h2 {
+  color: var(--dark-color);
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+}
+
+.portfolio a {
+  text-decoration: none;
+}
+
+.portfolio .element-type {
+  color: var(--primery-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+}
+
+.portfolio .element-disc {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}

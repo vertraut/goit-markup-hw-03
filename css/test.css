@@ -1,0 +1,32 @@
+/* Используйте разметку и эти стили для практики рассматриваемых свойств */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 750px;
+  padding: 30px;
+  background-color: #455a64;
+  align-items: baseline;
+  align-content: stretch;
+}
+
+.element {
+  width: 200px;
+  font-size: 14px;
+  text-align: left;
+  line-height: 2;
+  padding: 5px;
+}
+
+.pink {
+  background-color: #e91e63;
+}
+
+.blue {
+  background-color: #2196f3;
+}
+
+.amber {
+  background-color: #ffc107;
+}
