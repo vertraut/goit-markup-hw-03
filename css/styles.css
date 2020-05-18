@@ -93,10 +93,13 @@ h6 {
 
 /* header */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header .container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .header .logo-accent {
@@ -115,11 +118,6 @@ h6 {
   display: flex;
   align-items: center;
 }
-
-/* .header-nav li:not(:last-child) {
-  outline: 1px solid black;
-  margin-right: 50px;
-} */
 
 .header-nav li + li {
   margin-left: 50px;
@@ -182,10 +180,14 @@ h6 {
 }
 
 /* hero */
-.hero {
+
+.hero .container {
   background-color: #757575;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+
 .hero-title {
   color: var(--light-color);
   font-weight: 900;
@@ -298,9 +300,9 @@ h6 {
 
 .team-item {
   background: #ffffff;
-
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  padding-bottom: 24px;
 }
 
 .team-item h3 {
@@ -332,7 +334,7 @@ h6 {
 .team-social-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .team-social-list a {
@@ -392,6 +394,10 @@ h6 {
   display: flex;
 }
 
+.footer .logo {
+  margin-bottom: 10px;
+}
+
 .footer .logo-accent {
   color: #ffffff;
 }
@@ -399,6 +405,10 @@ h6 {
 /* блок div с адресом и контактами */
 .footer .address {
   margin-right: auto;
+}
+
+.footer .address li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .footer address {
@@ -411,8 +421,6 @@ h6 {
   font-size: 14px;
   line-height: 1.71;
   color: #ffffff;
-  padding-top: 10px;
-
   margin: 0;
 }
 
@@ -423,7 +431,6 @@ h6 {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  padding-top: 9px;
   margin: 0;
 }
 
@@ -468,9 +475,10 @@ h6 {
 .footer-social b,
 .subscribe b {
   display: block;
+  margin-bottom: 21px;
+
   color: #ffffff;
   text-transform: uppercase;
-  padding-bottom: 21px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -479,15 +487,16 @@ h6 {
 /* Копирайт */
 
 .copyright p {
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.4);
   margin-top: 28px;
   margin-bottom: 0;
   padding-top: 18px;
   padding-bottom: 21px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* portfolio */
