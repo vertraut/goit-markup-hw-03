@@ -33,7 +33,7 @@ h6 {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -59,6 +59,7 @@ h6 {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -131,7 +132,6 @@ h6 {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: #212121;
   text-decoration: none;
   font-weight: 500;
@@ -151,7 +151,6 @@ h6 {
 .header-nav .nav-link:hover,
 .header-nav .nav-link:focus {
   color: var(--accent-color);
-  text-decoration: underline;
 }
 
 /* contact header */
@@ -180,9 +179,10 @@ h6 {
 }
 
 /* hero */
-
+.hero {
+  background-color: var(--primery-text-color);
+}
 .hero .container {
-  background-color: #757575;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -200,6 +200,14 @@ h6 {
 }
 
 /* advantages - преимущества */
+
+.section.advantages {
+  border-bottom: 1px solid #ececec;
+}
+
+.advantages .container {
+}
+
 .advantages ul {
   display: flex;
   justify-content: space-between;
@@ -212,7 +220,7 @@ h6 {
 }
 
 .advantages-item {
-  width: 278px;
+  width: 270px;
 }
 
 .advantages-item h3 {
@@ -237,7 +245,7 @@ h6 {
 }
 
 .services-item {
-  width: 380px;
+  width: 370px;
 }
 
 .services-item img {
@@ -299,6 +307,7 @@ h6 {
 }
 
 .team-item {
+  width: 270px;
   background: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -362,7 +371,7 @@ h6 {
 }
 
 .clients_item {
-  width: 175px;
+  width: 170px;
   text-align: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -392,6 +401,7 @@ h6 {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer .logo {
@@ -476,7 +486,6 @@ h6 {
 .subscribe b {
   display: block;
   margin-bottom: 21px;
-
   color: #ffffff;
   text-transform: uppercase;
   font-size: 14px;
@@ -530,6 +539,7 @@ section.portfolio {
   letter-spacing: 0.03em;
   padding: 6px 22px;
   border-style: none;
+  cursor: pointer;
 }
 
 .filter-item button:hover,
@@ -549,7 +559,7 @@ section.portfolio {
 
 .example > li {
   background: #ffffff;
-  width: 380px;
+  width: 370px;
   border: 1px solid #eeeeee;
   border-radius: 5px;
 }
@@ -563,6 +573,7 @@ section.portfolio {
 }
 
 .example img {
+  display: block;
   margin-bottom: 20px;
 }
 
