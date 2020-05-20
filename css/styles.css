@@ -32,6 +32,23 @@ h6 {
   color: var(--dark-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -399,7 +416,7 @@ h6 {
   padding-top: 48px;
 }
 
-.footer .container {
+.flex.container {
   display: flex;
   align-items: baseline;
 }
@@ -495,7 +512,7 @@ h6 {
 
 /* Копирайт */
 
-.copyright p {
+.copyright {
   margin-top: 28px;
   margin-bottom: 0;
   padding-top: 18px;
@@ -514,10 +531,6 @@ section.portfolio {
 }
 
 /* filter */
-
-.portfolio h1 {
-  margin: 0;
-}
 
 /* Кнопки фильтра */
 
